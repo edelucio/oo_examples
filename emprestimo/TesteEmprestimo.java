@@ -6,22 +6,24 @@ public class TesteEmprestimo {
 
 	public static void main(String[] args) {
 		
-		Emprestimo e1 = new Emprestimo();
-		
 		Scanner scan = new Scanner(System.in);
 		
+		Emprestimo emprestimo = new Emprestimo();
+				
 		System.out.println("Digite Credor: ");
-		e1.setCredor(scan.nextLine());
+		String resposta = scan.nextLine();
+		emprestimo.setCredor(resposta);
 		
-		System.out.println("Digite valor : ");
-		e1.valor = scan.nextDouble();
+		System.out.println("Digite valor do emprestimo : ");
+		Double valor = scan.nextDouble();
+		emprestimo.valor = valor;
 		
 		System.out.println("Digite quantidade de parcelas: ");
-		e1.qtdParcelas = scan.nextInt();
+		emprestimo.qtdParcelas = scan.nextInt();
 		
 			
-		System.out.println("Caro " + e1.getCredor() + ", para o empréstimo no valor de " + e1.valor + 
-				            " você pagará " + e1.qtdParcelas + " de " + calcularValorDaParcela(e1.valor, e1.qtdParcelas));
+		System.out.println("Caro " + emprestimo.getCredor() + ", para o empréstimo no valor de " + emprestimo.valor + 
+				            " você pagará " + emprestimo.qtdParcelas + " de " + emprestimo.calcularValorDaParcela(emprestimo.valor, emprestimo.qtdParcelas));
 
 	}
 }
