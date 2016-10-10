@@ -1,8 +1,8 @@
 package abstractcar;
 
-public abstract class Liga {
-	public void executar(){
-		System.out.println("Carro Ligado!");
+public abstract class Liga extends Carro{
+	public String getLiga(){
+		return "Carro ligado!!!";
 	}
 
 }

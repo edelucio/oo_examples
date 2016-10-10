@@ -1,7 +1,7 @@
 package abstractcar;
 
-public abstract class Acelera {
-	public void executar(){
-		System.out.println("Carro Acelerando");
+public abstract class Acelera extends Carro {
+	public String getAcelera(){
+		return "Carro acelerando!!!";
 	}
 }

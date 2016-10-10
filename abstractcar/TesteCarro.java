@@ -7,12 +7,12 @@ public class TesteCarro {
 		Carro c1 = new Fiat();
 		
 		c1.setMarca("Fiat");
-		c1.setModelo("Toro");
+		c1.setModelo("Mobi");
 		c1.setCor("Branco");
 		c1.Ligar();
 		c1.Acelerar();
-		
-		System.out.println("Carro Marca: " + c1.getMarca() + "\nModelo: " + c1.getModelo() + "\nCor: " + c1.getCor()+ "\n");
+				
+		System.out.println("Marca: " + c1.getMarca() + "\nModelo: " + c1.getModelo() + "\nCor: " + c1.getCor()+ "\n");
 		
 		Carro c2 = new Ford();
 		
@@ -22,7 +22,7 @@ public class TesteCarro {
 		c2.Ligar();
 		c2.Acelerar();
 		
-		System.out.println("Carro Marca: " + c2.getMarca() + "\nModelo: " + c2.getModelo() + "\nCor: " + c2.getCor() + "\n");
+		System.out.println("Marca: " + c2.getMarca() + "\nModelo: " + c2.getModelo() + "\nCor: " + c2.getCor() + "\n");
 		
 		Carro c3 = new Vw();
 		
@@ -32,7 +32,7 @@ public class TesteCarro {
 		c3.Ligar();
 		c3.Acelerar();
 		
-		System.out.println("Carro Marca: " + c3.getMarca() + "\nModelo: " + c3.getModelo() + "\nCor: " + c3.getCor() + "\n");
+		System.out.println("Marca: " + c3.getMarca() + "\nModelo: " + c3.getModelo() + "\nCor: " + c3.getCor() + "\n");
 		
 	}
 }

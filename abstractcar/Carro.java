@@ -6,6 +6,22 @@ public abstract class Carro {
 	private String modelo;
 	private String cor;
 	
+	public abstract class Liga {
+		public abstract String getLiga();
+	}
+	
+	public abstract class Acelera {
+		public abstract String getAcelera();
+	}
+	
+	public void Ligar() {
+		System.out.println("Ligado");
+	}
+
+	public void Acelerar() {
+		System.out.println("Acelerando");
+	}
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -29,15 +45,4 @@ public abstract class Carro {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-
-	public void Ligar() {
-		System.out.println("Ligado");
-		
-	}
-
-	public void Acelerar() {
-		System.out.println("Acelerando");
-		
-	}
-
 }
