@@ -1,7 +1,14 @@
 package abstractcar;
 
 public class Vw extends Carro{
-	public void Acelerar() {
-		System.out.println("Acelerando Motor 4.0");
+	public Vw(String marca, String modelo, String cor, String motor) {
+		super(marca, modelo, cor, motor);
+	}
+	public void ligar() {
+		System.out.println("Vw Ligado");
+		}
+	
+	public void acelerar() {
+		System.out.println("Vw Acelerando");
 	}
 }

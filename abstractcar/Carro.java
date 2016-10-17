@@ -5,21 +5,17 @@ public abstract class Carro {
 	private String marca;
 	private String modelo;
 	private String cor;
+	private String motor;
 	
-	public abstract class Liga {
-		public abstract String getLiga();
-	}
-	
-	public abstract class Acelera {
-		public abstract String getAcelera();
-	}
-	
-	public void Ligar() {
-		System.out.println("Ligado");
-	}
+	public abstract void ligar();
 
-	public void Acelerar() {
-		System.out.println("Acelerando");
+	public abstract void acelerar();
+	
+	public Carro(String marca, String modelo, String cor, String motor){
+		this.marca = marca;
+		this.modelo = modelo;
+		this.cor = cor;
+		this.motor = motor;
 	}
 	
 	public String getMarca() {
@@ -44,5 +40,13 @@ public abstract class Carro {
 
 	public void setCor(String cor) {
 		this.cor = cor;
+	}
+
+	public String getMotor() {
+		return motor;
+	}
+
+	public void setMotor(String motor) {
+		this.motor = motor;
 	}
 }

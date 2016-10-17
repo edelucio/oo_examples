@@ -1,7 +1,14 @@
 package abstractcar;
 
 public class Fiat extends Carro {
-	public void Acelerar() {
-		System.out.println("Acelerando Motor 1.0");
+	public Fiat(String marca, String modelo, String cor, String motor) {
+		super(marca, modelo, cor, motor);
+	}
+	public void ligar() {
+		System.out.println("Fiat Ligado");
+		}
+	
+	public void acelerar() {
+		System.out.println("Fiat Acelerando");
 	}
 }

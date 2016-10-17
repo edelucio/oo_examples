@@ -4,35 +4,26 @@ public class TesteCarro {
 
 	public static void main(String[] args) {
 		
-		Carro c1 = new Fiat();
+		Carro c1 = new Fiat("Fiat", "Mobi", "Branco", "1.0");
 		
-		c1.setMarca("Fiat");
-		c1.setModelo("Mobi");
-		c1.setCor("Branco");
-		c1.Ligar();
-		c1.Acelerar();
+		c1.ligar();
+		c1.acelerar();
 				
-		System.out.println("Marca: " + c1.getMarca() + "\nModelo: " + c1.getModelo() + "\nCor: " + c1.getCor()+ "\n");
+		System.out.println("Marca: " + c1.getMarca() + "\nModelo: " + c1.getModelo() + "\nCor: " + c1.getCor()+ "\nMotor: " + c1.getMotor() + "\n");
 		
-		Carro c2 = new Ford();
+		Carro c2 = new Ford("Ford", "Fusion", "Preto", "2.0");
 		
-		c2.setMarca("Ford");
-		c2.setModelo("Fusion");
-		c2.setCor("Preto");
-		c2.Ligar();
-		c2.Acelerar();
+		c2.ligar();
+		c2.acelerar();
 		
-		System.out.println("Marca: " + c2.getMarca() + "\nModelo: " + c2.getModelo() + "\nCor: " + c2.getCor() + "\n");
+		System.out.println("Marca: " + c2.getMarca() + "\nModelo: " + c2.getModelo() + "\nCor: " + c2.getCor() + "\nMotor: " + c2.getMotor() + "\n");
+		 
+		Carro c3 = new Vw("Vw", "Tiguan", "Vermelho", "4.0");
 		
-		Carro c3 = new Vw();
+		c3.ligar();
+		c3.acelerar();
 		
-		c3.setMarca("Vw");
-		c3.setModelo("Tiguan");
-		c3.setCor("Vermelho");
-		c3.Ligar();
-		c3.Acelerar();
-		
-		System.out.println("Marca: " + c3.getMarca() + "\nModelo: " + c3.getModelo() + "\nCor: " + c3.getCor() + "\n");
+		System.out.println("Marca: " + c3.getMarca() + "\nModelo: " + c3.getModelo() + "\nCor: " + c3.getCor() + "\nMotor: " + c2.getMotor() +  "\n");
 		
 	}
 }
