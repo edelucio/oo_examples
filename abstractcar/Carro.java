@@ -5,17 +5,16 @@ public abstract class Carro {
 	private String marca;
 	private String modelo;
 	private String cor;
-	private String motor;
-	
+	protected static String potencia;
+		
 	public abstract void ligar();
 
 	public abstract void acelerar();
 	
-	public Carro(String marca, String modelo, String cor, String motor){
+	public Carro(String marca, String modelo, String cor, String potencia){
 		this.marca = marca;
 		this.modelo = modelo;
 		this.cor = cor;
-		this.motor = motor;
 	}
 	
 	public String getMarca() {
@@ -42,11 +41,8 @@ public abstract class Carro {
 		this.cor = cor;
 	}
 
-	public String getMotor() {
-		return motor;
+	public String getPotencia() {
+		return potencia;
 	}
-
-	public void setMotor(String motor) {
-		this.motor = motor;
-	}
+	
 }
